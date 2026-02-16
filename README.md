@@ -1,4 +1,5 @@
-AI-Assisted Dynamic Voltage and Frequency Scaling Framework
+**AI-Assisted Dynamic Voltage and Frequency Scaling Framework**
+---
  Overview
 
 Dynamic Voltage and Frequency Scaling (DVFS) is widely used to reduce power consumption by adjusting CPU frequency according to workload demands.
@@ -16,13 +17,13 @@ Oscillatory behavior
 Delayed response to workload bursts
 
 This project proposes a lightweight AI-assisted, thermal-aware DVFS controller that improves stability, responsiveness, and hardware safety.
-
+---
  Core Idea
 
 Predict short-term workload and apply thermal constraints before adjusting frequency.
 
 Instead of reacting to the present workload, the system anticipates near-future demand and integrates temperature rise trends into its decision-making process.
-
+---
  System Architecture
 Historical Data (Load, Temperature, Frequency)
                 ↓
@@ -33,7 +34,7 @@ Temperature Rise Calculation
 Constraint-Based DVFS Controller
                 ↓
 Final Frequency Decision
-
+---
  Implementation Details
 1️ Workload Prediction (ML Layer)
 
@@ -81,7 +82,7 @@ Smooth frequency transitions
 Reduced oscillations
 
 Hardware-safe operation
-
+---
  Dataset & Training
 
 Features:
@@ -103,7 +104,7 @@ Dataset split:
 20% Testing (time order preserved)
 
 Time-series integrity is maintained (shuffle=False).
-
+---
  Existing Research & Related Work
 
 DVFS has been extensively studied in power-aware computing research.
@@ -139,15 +140,15 @@ While effective, complex models increase computational overhead and may not suit
 
 Advanced approaches integrate thermal modeling to prevent overheating.
 However, many systems treat thermal and predictive mechanisms separately.
-
+---
  How This Project Differs
 
 This framework combines:
 
-✔ Short-term workload prediction
-✔ Temperature rise constraint
-✔ Lightweight ML model
-✔ Gradual frequency scaling
+ -Short-term workload prediction
+- Temperature rise constraint
+- Lightweight ML model
+- Gradual frequency scaling
 
 Unlike deep learning–heavy solutions, this design:
 
@@ -159,29 +160,7 @@ Is embedded-friendly
 
 Bridges predictive intelligence and thermal safety
 
- Evaluation Goals
-
-The system compares:
-
-Original DVFS frequency
-
-AI-predicted frequency
-
-Workload prediction accuracy
-
-Frequency transition smoothness
-
-Thermal stability behavior
-
-Metrics to evaluate:
-
-Mean Absolute Error (MAE)
-
-Frequency switching count
-
-Average frequency difference
-
-Thermal rise constraint effectiveness
+---
 
  Technologies Used
 
@@ -192,13 +171,8 @@ Pandas
 NumPy
 
 Scikit-learn
+---
 
-Project Structure
-predictive-thermal-dvfs/
-│
-├── dvfs_dataset.csv
-├── dvfs_controller.py
-└── README.md
 
  Expected Benefits
 
@@ -207,7 +181,7 @@ Reduced thermal spikes
 More stable power behavior
 
 Fewer unnecessary frequency boosts
-
+---
 Author 
 Harshini Perumal
 Improved hardware longevity

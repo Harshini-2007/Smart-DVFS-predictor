@@ -84,3 +84,12 @@ freq_compare = pd.DataFrame({
 print("\nOriginal vs AI Frequency:")
 print(freq_compare)
 
+increase = sum(freq_compare["AI_Predicted_Freq"] > freq_compare["Original_Freq"])
+decrease = sum(freq_compare["AI_Predicted_Freq"] < freq_compare["Original_Freq"])
+same = sum(freq_compare["AI_Predicted_Freq"] == freq_compare["Original_Freq"])
+
+print(f"\nSummary:")
+print(f"AI increased frequency: {increase} times")
+print(f"AI decreased frequency: {decrease} times")
+print(f"AI kept frequency same: {same} times")
+

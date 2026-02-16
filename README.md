@@ -1,4 +1,5 @@
 **AI-Assisted Dynamic Voltage and Frequency Scaling Framework**
+---
 
  Overview
  ---
@@ -148,5 +149,3 @@ Author
 ---
 Harshini Perumal
 
-
-Better workload anticipation

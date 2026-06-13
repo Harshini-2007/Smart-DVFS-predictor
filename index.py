@@ -40,6 +40,11 @@ result = pd.DataFrame({
 print("\nComparison Table:")
 print(result)
 '''
+
+from sklearn.metrics import mean_absolute_error
+
+mae = mean_absolute_error(y_test, predicted_load)
+print("MAE:", mae)
 # Take only test portion from dataframe
 test_data = d.iloc[-len(X_test):].copy()
 
